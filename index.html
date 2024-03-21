@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waleed Rashid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/2b6be995f0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <img class = "logo" src = "assets/logo.png"/>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about"><b>About Me</b></a></li>
+          <li><a href="#projects"><b>Projects</b></a></li>
+          <li><a href="#contact"><b>Contact Me</b></a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <img class = "logo" src = "assets/logo.png"/>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()"><b>About</b></a></li>
+          <li><a href="#projects" onclick="toggleMenu()"><b>Projects</b></a></li>
+          <li><a href="#contact" onclick="toggleMenu()"><b>Contact</b></a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Waleed Rashid Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey, I'm</p>
+        <h1 class="title">Waleed!</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Waleed Rashid Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/waleed-rashid-216a88247/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/waleedrashid1'"
+          />
+        </div>
+      </div>
+      <img src = "assets/arrow.png" alt = "Arrow icon" class = "icon arrow"
+      onclick = "location.href='./#about'"/>
+    </section>
+    
+    <!------------- ABOUT --------------->
+    <section id = "about">
+      <h1 class = "sub-title">About Me</h1>
+      <div class = "section-container">
+        <div class = "about-details-container">
+          <div class = "about-containers">
+            <div class = "details-container">
+              <h2 class = "about-sub-title">Experience</h2>
+              <div class = "article-container">
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>C</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src = "assets/checkmark.png" alt = "Experience icon" class = "icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class = "details-container">
+              <h2 class = "about-sub-title">Education</h2>
+              <div class = "article-container">
+              <article>
+                <img src = "assets/experience.png" alt = "Education icon" class = "icon"
+                />
+                <div>
+                  <h3>B.Eng - Bachelor's of Engineering</h3>
+                  <p>Computer Engineering</p>
+                </div>
+              </article>
+              <article>
+                  <i class="fa-solid fa-building-columns"></i>
+                  <div>
+                  <h3>Toronto Metropolitan University</h3>
+                  <p>Anticipated Graduation: 2027</p>
+                </div>
+              </article>
+            </div>
+            </div>
+          </div>
+          <div class = "text-container">
+          </div>
+        </div>
+      </div>
+      <img src = "assets/arrow.png" alt = "Arrow icon" class = "icon arrow"
+      onclick = "location.href='./#projects'"/>
+    </section>
+
+    <!------------- PROJECTS --------------->
+    <section id = "projects">
+      <div class = "container">
+        <h1 class = "sub-title">Projects</h1>
+        <div class = "work-list">
+          <div class = "work">
+            <img src = "assets/snakes-and-ladders-background.jpg">  
+            <div class = "layer">
+              <h3><b>Advanced Snakes and Ladders Game</b></h3>
+              <p2>A re-creation of the classic Snakes and Ladders game made using<br>
+                the Model-View-Controller design scheme in Java. The player<br>
+                competes against an AI, in which there are several boosts laid<br>
+                around the board which can either aid or hinder the player/AI.<br>
+                Colour customization is included for the player, where the AI's<br>
+                colour is chosen with respect to the player's.<br>
+                Check out the code using this link!</p>
+                <a href = "https://github.com/waleedrashid1/snakes-and-ladders-game.git" target= = "_blank" rel = "noopener noreferrer"><i class = "fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class = "work">
+            <img src = "assets/ludo-background.jpg">
+            <div class = "layer">
+              <h3><b>Ludo Board Game</b></h3>
+              <p2>The classic board game Ludo, similiar to "Sorry!". 2 players are<br>
+                able to compete against each other in a race around the board. Both<br>
+                players take turns rolling the dice and move as they roll. First player<br>
+                to reach home wins. This was mainly created using the Java drawing<br>
+                library. Check out the code using this link!</p>
+                <a href = "https://github.com/waleedrashid1/Ludo-Board-Game.git" target= = "_blank" rel = "noopener noreferrer"><i class = "fas fa-external-link-alt"></i></a>
+              </div>
+          <!--</div>
+         <div class = "work">
+            <img src = "">
+            <div class = "layer">
+              <h3><b>/b></h3>
+              <p2></p>
+                <a href = "#"><i class = "fas fa-external-link-alt"></i></a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img src = "assets/arrow.png" alt = "Arrow icon" class = "icon arrow"
+      onclick = "location.href='./#contact'"/>
+    </section>
+    <!------------------------ CONTACT ME ------------------------->
+    <section id = "contact">
+      <div class = "container">
+        <div class = "row">
+          <div class = "contact-left">
+            <h1 class = "sub-title">Contact Me</h1>
+            <p>Send me a message and I'll get back to you as soon as possible!</p>
+            <p><a href = "mailto:waleed.rashid35@gmail.com"><i class="fa-solid fa-envelope"></i><b>waleed.rashid35@gmail.com</b></p></a>
+            <div class = "social-icons">
+              <a href = "https://www.linkedin.com/in/waleed-rashid-216a88247/"><i class = "fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class = "contact-right">
+            <form name = "submit-to-google-sheet">
+              <input type = "text" name = "Name" placeholder = "Your Name" required>
+              <input type = "email" name = "Email" placeholder = "Your Email" required>
+              <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+              <button type = "submit" class = "btn2">Submit</button>
+            </form>
+            <span id = "msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------- FOOTER ----------------->
+    <div class="line-container">
+      <hr class="footer-line">
+    </div>
+  <footer>
+      <nav>
+          <div class="nav-links-container">
+              <img class="logo" src="assets/logo.png">
+          </div>
+      </nav>
+      <p>&#169; 2024 By Waleed Rashid</p>
+  </footer>
+  
+
+    <script>
+      var tabLinks = document.getElementsByClassName ("tab-links");
+      var tabContents = document.getElementsByClassName ("tab-contents");
+
+      function opentab (tabname) {
+        for (tablink of tabLinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabContents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxgxodwkCXREeB_AH3zIzvH4JiMODodxMJtRgBF6K93ziqJLvFf5Bolq_jdtkm9MLw9/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
